@@ -4,3 +4,5 @@
 Завдання 3: https://drive.google.com/file/d/1TOl0w60bFQ5CWq0S9KelhEPsOnfyrnG5/view?usp=sharing
 
 Завдання 4: https://drive.google.com/file/d/1KZrm4YQG1BTs7t6GmiLQc5Fo6DqTU6Y-/view?usp=sharing
+
+Завдання 5: https://drive.google.com/file/d/1D1R7-hy_dBXsBL17_6MxHvKemYqP94C2/view?usp=sharing
