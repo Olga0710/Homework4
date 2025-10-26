@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +19,7 @@ namespace WorkerTeam
         {
             _workday += "Call, ";
         }
-        public void Write_code()
+        public void WriteCode()
         {
             _workday += "Write code, ";
         }
@@ -27,7 +27,7 @@ namespace WorkerTeam
         {
             _workday += "Relax, ";
         }
-        public abstract void Fill_work_day();
+        public abstract void FillWorkDay();
 
     }
     class Developer : Worker
@@ -36,12 +36,12 @@ namespace WorkerTeam
         {
             _position = "Developer";
         }
-        public override void Fill_work_day()
-        {            
-            Write_code();
+        public override void FillWorkDay()
+        {
+            WriteCode();
             Call();
             Relax();
-            Write_code();
+            WriteCode();
         }
     }
 
@@ -54,7 +54,7 @@ namespace WorkerTeam
 
         private Random random = new Random();
 
-        public override void Fill_work_day()
+        public override void FillWorkDay()
         {
             int calls1 = random.Next(1, 11);
             for (int i = 0; i < calls1; i++)
