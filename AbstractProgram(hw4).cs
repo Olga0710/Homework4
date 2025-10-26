@@ -8,10 +8,11 @@
             Mountain mountain = new Mountain(48.09, 24.30, "Goverla", "The highest peak of the Ukrainian Carpathians", 2061);
 
             Console.WriteLine("===RIVER===");
-            river.Get_info();
+            river.GetInfo();
             Console.WriteLine("===MOUNTAIN===");
-            mountain.Get_info();
+            mountain.GetInfo();
 
         }
     }
 }
+
