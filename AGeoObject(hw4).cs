@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace GeographyAbstract
 {
-    abstract class AGeoObject
+    abstract class GeoObject
     {
         public double _x { get; set; }
         public double _y { get; set; }
         public string _name { get; set; }
         public string _description { get; set; }
-        public AGeoObject(double x, double y, string name, string description)
+        public GeoObject(double x, double y, string name, string description)
         {
             _x = x;
             _y = y;
             _name = name;
             _description = description;
         }
-        public virtual void Get_info()
+        public virtual void GetInfo()
         {
             Console.WriteLine($"Name: {_name}");
             Console.WriteLine($"X = {_x}, Y = {_y}");
@@ -27,7 +27,7 @@ namespace GeographyAbstract
         }
     }
 
-    class River : AGeoObject
+    class River : GeoObject
     {
         public double _speed;
         public double _length;
@@ -38,16 +38,16 @@ namespace GeographyAbstract
             _length = length;
         }
 
-        public override void Get_info()
+        public override void GetInfo()
         {
-            base.Get_info();
+            base.GetInfo();
             Console.WriteLine($"Flow speer: {_speed} sm/s");
             Console.WriteLine($"Length: {_length}");
 
         }
     }
 
-    class Mountain : AGeoObject
+    class Mountain : GeoObject
     {
         public double _highestPoint;
 
@@ -56,11 +56,12 @@ namespace GeographyAbstract
             _highestPoint = hihestPoint; 
         }
 
-        public override void Get_info()
+        public override void GetInfo()
         {
-            base.Get_info();
+            base.GetInfo();
             Console.WriteLine($"The highest point: {_highestPoint}");
         }
 
     }
 }
+
