@@ -13,7 +13,7 @@ namespace GeographyInterface
         string _name { get; set; }
         string _description { get; set; }
 
-        void Get_info();
+        void GetInfo();
     }
 
     class River : GeoObject
@@ -70,4 +70,5 @@ namespace GeographyInterface
 
     }
 }
+
 
