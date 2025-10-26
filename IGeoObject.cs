@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GeographyInterface
 {
-    internal interface IGeoObject
+    internal interface GeoObject
     {
         double _x { get; set; }
         double _y { get; set; }
@@ -16,7 +16,7 @@ namespace GeographyInterface
         void Get_info();
     }
 
-    class River : IGeoObject
+    class River : GeoObject
     {
         public double _x { get; set; }
         public double _y { get; set; }
@@ -34,7 +34,7 @@ namespace GeographyInterface
             _speed = speed;
             _length = length;
         }
-        public void Get_info()
+        public void GetInfo()
         {
             Console.WriteLine($"Name: {_name}");
             Console.WriteLine($"X = {_x}, Y = {_y}");
@@ -44,7 +44,7 @@ namespace GeographyInterface
         }
 
     }
-    class Mountain: IGeoObject
+    class Mountain: GeoObject
     {
         public double _x { get; set; }
         public double _y { get; set; }
@@ -59,7 +59,7 @@ namespace GeographyInterface
             _description = description;
             _highestPoint = highestPoint;
         }
-        public void Get_info()
+        public void GetInfo()
         {
             Console.WriteLine($"Name: {_name}");
             Console.WriteLine($"X = {_x}, Y = {_y}");
@@ -70,3 +70,4 @@ namespace GeographyInterface
 
     }
 }
+
