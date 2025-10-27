@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +14,7 @@ namespace MauiShop.Models
         public string _name { get; set; }
         public DateTime _packageData { get; set; }
         public string _description { get; set; }
-        public abstract string Get_info();
+        public abstract string GetInfo();
 
     }
 
@@ -23,7 +23,7 @@ namespace MauiShop.Models
         public int _expirationDate { get; set; }
         public int _quantity { get; set; }
         public string _unitMeasure { get; set; }
-        public override string Get_info()
+        public override string GetInfo()
         {
             return($"Food {_name} - {_quantity}, {_unitMeasure}, {_price} hrn; Shelf life {_expirationDate} days");
         }
@@ -35,7 +35,7 @@ namespace MauiShop.Models
         public int _pages { get; set; }
         public string _publisher { get; set; }
         public string _authors { get; set; }
-        public override string Get_info()
+        public override string GetInfo()
         {
             return ($"Book {_name} - {_pages} pages, {_publisher}; Author(-s):  {_authors}");
         }
